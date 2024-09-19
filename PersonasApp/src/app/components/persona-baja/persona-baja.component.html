@@ -1,0 +1,11 @@
+<div class="container">
+    <h1 class="text-center">Baja de personas</h1>
+
+    <br>
+
+    <div *ngFor="let persona of oPersonaBaja">
+        <label class="form-label col-md-6">({{ persona.ID }}) - {{ persona.Nombre }} - {{ persona.Apellido }}</label>
+        <button class="btn btn-primary col-md-6" (click)="eliminarPersona(persona)">Eliminar Persona</button>
+    </div>
+
+</div>

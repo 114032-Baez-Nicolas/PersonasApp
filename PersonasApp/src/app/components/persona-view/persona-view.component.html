@@ -1,0 +1,24 @@
+<div class="container">
+    <h1 class="text-center">Personas Añadidas</h1>
+
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th class="text-white">ID</th>
+                <th class="text-white">Nombre</th>
+                <th class="text-white">Apellido</th>
+                <th class="text-white">Edad</th>
+                <th class="text-white">Genero</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let persona of oPersonasViews">
+                <td class="text-white">{{ persona.ID }}</td>
+                <td class="text-white">{{ persona.Nombre }}</td>
+                <td class="text-white">{{ persona.Apellido }}</td>
+                <td class="text-white">{{ persona.Edad }}</td>
+                <td class="text-white">{{ persona.Genero }}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
